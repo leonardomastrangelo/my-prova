@@ -1,0 +1,176 @@
+@use './partials/variables' as *;
+
+$fa-font-path: "../fonts/webfonts" !default;
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+@import '~bootstrap/scss/bootstrap';
+
+h1 {
+    padding: 40px 0;
+}
+.wd-10 {
+    width: 10%;
+}
+.wd-90 {
+    width: 90%;
+}
+.wd-100 {
+    width: 100%;
+}
+.rectangle {
+    width: 300px;
+    height: 157px;
+    margin: 0 auto;
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+.logo-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+td {
+    vertical-align: middle !important;
+    text-align: center;
+}
+th {
+    vertical-align: middle!important;
+    text-align: center;
+}
+#app {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+#sidebar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $prussian-blue;
+    padding-top: 60px;
+    h2 {
+        font-size: 1.4em;
+        padding: 20px 0;
+        color: white;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            padding: 10px 0;
+            i {
+                font-size: 1.5em;
+                vertical-align: middle;
+                margin-right: 8px;
+                color: $selective-yellow;
+            }
+            span {
+                vertical-align: middle;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .btn-primary { 
+        margin: 20px 0;
+    }
+}
+#main-content {
+    height: calc(100% - 56px);
+    position: relative;
+    overflow-y: auto;
+    margin-top: 60px;
+    padding-bottom: 60px;
+    nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        background-color: $prussian-blue;
+    }
+}
+#main-content::-webkit-scrollbar {
+    display: none;
+}
+#projects-index {
+    overflow: hidden;
+    h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    }
+    .desc {
+        height: 142px;
+        overflow-y: auto;
+    }
+    .table .btn {
+        text-decoration: none;
+        margin: 1.8px 0;
+    }
+}
+#projects-show {
+    overflow: hidden;
+    h1 {
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    }
+
+    #project-prev {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+}
+#projects-create {
+    overflow: hidden;
+    h1 {
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    }
+    .form-group {
+        padding: 20px 0;
+        margin: 0 auto;
+        input {
+            text-align: center;
+        }
+        label {
+            font-size: 1.6em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+        }
+    }
+}
+#modal-item-title {
+    font-size: 1.6em;
+    font-weight: 500;
+}
+

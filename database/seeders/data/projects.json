@@ -1,0 +1,10 @@
+[
+  {
+    "title": "BoolFlix",
+    "github": "https://github.com/leonardomastrangelo/vite-boolflix",
+    "logo": "boolflix-logo.png",
+    "image": "boolflix.png",
+    "status": true,
+    "description": "Una rivisitazione personale di Netflix, realizzata per esercitarmi con Vue e Vite. Il progetto BoolFlix mira a fornire un'esperienza coinvolgente per la fruizione di contenuti multimediali, offrendo una vasta gamma di film e serie TV. Scopri le nuove funzionalità implementate con tecnologie all'avanguardia e goditi la navigazione intuitiva attraverso il vasto catalogo di intrattenimento."
+  }
+]
